@@ -30,67 +30,118 @@
             <form action="../scripts/submit_review.php" method="POST">
                 <fieldset>
                     <legend>Product Details</legend>
-                    <label for="pname">Product Name:</label>
-                    <input type="text" id="pname" name="pname" value="Product name">
-                    <label for="pcat">Product Categorie:</label>
-                    <input type="text" id="pcat" name="pcat" value="Prodcut Categorie">
+                    <div class="content">
+                        <label for="pname">Product Name:</label>
+                        <input class="input-block full-width" type="text" id="pname" name="pname" value="Product name">
+                    </div>
+                    <div class="content">
+                        <label for="pcat">Product Categorie:</label>
+                        <input type="text" id="pcat" name="pcat" value="Product Categories">
+                    </div>
                     <hr/>
-                    <label for="activity">Ideal for:</label>
-                    <input list="activities" name="activity">
-                    <datalist id="activities">
-                        <option value="Water Sports">
-                        <option value="Hike">
-                        <option value="Camp">                           <!--add more later-->
-                        <option value="Climbing">
-                        <option value="Cycling">
-                    </datalist>
-                    <label for="weight">Product weight</label>
-                    <input type="number" id="weight" name="weight">
-                    <fieldset>
-                        <legend>Durability:</legend>
-                        <input type="radio" id="rocksolid" name="durability" value="rocksolid">
-                        <label for="rocksolid">Rocksolid</label>
-                        <input type="radio" id="solid" name="durability" value="solid">
-                        <label for="solid">Solid</label>
-                        <input type="radio" id="average" name="durability" value="average">
-                        <label for="average">Average durability</label>
-                        <input type="radio" id="belowavg" name="durability" value="belowavg">
-                        <label for="belowavg">Below average product wuality</label>
-                        <input type="radio" id="notdurable" name="durability" value="notdurable">
-                        <label for="notdurable">Not durable</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Value for money:</legend>
-                        <input type="radio" id="worthit" name="value" value="worthit">
-                        <label for="worthit">Worth every penny</label>
-                        <input type="radio" id="average" name="value" value="average">
-                        <label for="average">Average value</label>
-                        <input type="radio" id="notworth" name="value" value="notworth">
-                        <label for="notworth">Not worth the price</label>
-                    </fieldset>
+                    <div class="grid form">
+                        <div class="content">
+                            <label for="activity">Ideal for:</label>
+                            <input list="activities" name="activity">
+                            <datalist id="activities">
+                                <option value="Water Sports">
+                                <option value="Hike">
+                                <option value="Camp">                           <!--add more later-->
+                                <option value="Climbing">
+                                <option value="Cycling">
+                            </datalist>
+                        </div>
+                        <div class="content">
+                            <label for="weight">Product weight (kg): </label>
+                            <input type="number" id="weight" name="weight">
+                        </div>
+                        <fieldset>
+                            <legend>Durability:</legend>
+                            <div class="green content">
+                                <input type="radio" id="rocksolid" name="durability" value="rocksolid">
+                                <label for="rocksolid">Rocksolid</label>
+                            </div>
+                            <div class="yellow-green content">
+                                <input type="radio" id="solid" name="durability" value="solid">
+                                <label for="solid">Solid</label>
+                            </div>
+                            <div class="yellow content">
+                                <input type="radio" id="average" name="durability" value="average">
+                                <label for="average">Average durability</label>
+                            </div>
+                            <div class="orange content">
+                                <input type="radio" id="belowavg" name="durability" value="belowavg">
+                                <label for="belowavg">Below average product quality</label>
+                            </div>
+                            <div class="red content">
+                                <input type="radio" id="notdurable" name="durability" value="notdurable">
+                                <label for="notdurable">Not durable</label>
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Value for money:</legend>
+                            <div class="green content">
+                                <input type="radio" id="worthit" name="value" value="worthit">
+                                <label for="worthit">Worth every penny</label>
+                            </div>
+                            <div class="yellow content">
+                                <input type="radio" id="average" name="value" value="average">
+                                <label for="average">Average value</label>
+                            </div>
+                            <div class="red content">
+                                <input type="radio" id="notworth" name="value" value="notworth">
+                                <label for="notworth">Not worth the price</label>
+                            </div>
+                        </fieldset>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Review:</legend>
-                    <label for="rtitle">Title</label>
-                    <input type="text" id="rtitle" name="rtitle" value="Title">
-                    <label for="rbody">Your Review:</label>
-                    <input type="textarea" id="rbody" name="rbody" value="Your review goes here">
-                    <label for="pros">Pros:</label>
-                    <input type="text" id="pros" name="pros" value="Pros...">
-                    <label for="cons">Cons:</label>
-                    <input type="text" id="cons" name="cons" value="Cons...">
+                    <div class="content">
+                        <label for="rtitle">Title</label>
+                        <input class="input-block full-width" type="text" id="rtitle" name="rtitle" value="Title">
+                    </div>
+                    <div class="content">
+                        <label for="rbody">Your Review:</label>
+                            <textarea class="input-block full-width review-text-field" name="rbody" id="rbody">Your review goes here...</textarea>
+                    </div>
+                    <hr/>
+                    <div class="grid form">
+                        <div class="content">
+                            <label for="pros">Pros:</label>
+                            <input class="pros-cons-input" type="text" id="pros" name="pros" value="Pros...">
+                        </div>
+                        <div class="red content">
+                            <label for="cons">Cons:</label>
+                            <input class="pros-cons-input" type="text" id="cons" name="cons" value="Cons...">
+
+                        </div>
+
+                    </div>
+                    
                     <fieldset>
                         <legend>Overall Rating:</legend>
-                        <input type="radio" id="five" name="rating" value="five">
-                        <label for="five">Five stars!</label>
-                        <input type="radio" id="four" name="rating" value="four">
-                        <label for="four">Four stars!</label>
-                        <input type="radio" id="three" name="rating" value="three">
-                        <label for="three">Three stars</label>
-                        <input type="radio" id="two" name="rating" value="two">
-                        <label for="two">Five stars!</label>
-                        <input type="radio" id="one" name="rating" value="one">
-                        <label for="one">Five stars!</label>
+                        <div class="green content inline">
+                            <input type="radio" id="five" name="rating" value="five">
+                            <label for="five">Five stars!</label>
+                        </div>
+                        <div class="yellow-green content inline">
+                            <input type="radio" id="four" name="rating" value="four">
+                            <label for="four">Four stars!</label>
+                        </div>
+                        <div class="yellow content inline">
+                            <input type="radio" id="three" name="rating" value="three">
+                            <label for="three">Three stars</label>
+                        </div>
+                        <div class="orange content inline">
+                            <input type="radio" id="two" name="rating" value="two">
+                            <label for="two">Two stars</label>
+                        </div>
+                        <div class="red content inline">
+                            <input type="radio" id="one" name="rating" value="one">
+                            <label for="one">One star</label>
+                        </div>
                     </fieldset>
                 </fieldset>   
             </form>

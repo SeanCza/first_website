@@ -79,9 +79,36 @@ main img {
     margin:8px;
 }
 
+.inline.content {
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+}
+
 .content:hover {
     background-color: rgba(0, 128, 0, 0.394);
 }
+
+.red.content:hover{
+    background-color: rgba(128, 0, 21, 0.394);
+}
+.green.content:hover{
+    background-color: rgba(0, 113, 34,);
+
+}
+.yellow-green.content:hover{
+    background-color: yellowgreen;
+
+}
+.yellow.content:hover{
+    background-color: yellow;
+
+}
+.orange.content:hover{
+    background-color: orange;
+}
+
+
 
 .grid {
     display: grid;
@@ -112,9 +139,46 @@ footer table{
 
 th, td{
     border-style: solid;
-    border-width: px;
+    /* border-width: px; */
 }
 
 th {
     background-color: #5b5b5b;
+}
+
+/* fieldset input {
+} */
+
+.input-block {
+    display:block;
+}
+.input-block.full-width {
+    width: 95%;
+}
+
+.review-text-field{
+    height: 100px;
+}
+
+.pros-cons-input {
+    width:70%;
+}
+
+.grid.form {
+    grid-template-columns: auto auto;
+    /* grid-row-gap: 25px; */
+}
+
+label {
+    display: inline-block;
+    /* margin-bottom: 5px;
+    margin-top: 10px; */
+}
+
+fieldset {
+    border-style: none;
+}
+
+fieldset fieldset {
+    border-style: solid;
 }
