@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sean Czako"/>
+    <meta name="description" content="A place by geaHeads for gearHeads"/>
+    <meta name="keywords" content="Gear review, reviews, camping, user verified, member based"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Gear Hub Home</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imgs/logo1lcr.png" alt="logo"/> 
+        <nav>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href=#>Reviews</a></li>
+                <li><a href=#>Store</a></li>
+                <li><a href=#>Adventures</a></li>
+                <li><a href=#>Login</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+            | <a href="reviewshome.html">Reviews Home</a> |
+            
+            <h2><u>Submit a review:</u></h2>
+            <form action="../scripts/submit_review.php" method="POST">
+                <fieldset>
+                    <legend>Product Details</legend>
+                    <label for="pname">Product Name:</label>
+                    <input type="text" id="pname" name="pname" value="Product name">
+                    <label for="pcat">Product Categorie:</label>
+                    <input type="text" id="pcat" name="pcat" value="Prodcut Categorie">
+                    <hr/>
+                    <label for="activity">Ideal for:</label>
+                    <input list="activities" name="activity">
+                    <datalist id="activities">
+                        <option value="Water Sports">
+                        <option value="Hike">
+                        <option value="Camp">                           <!--add more later-->
+                        <option value="Climbing">
+                        <option value="Cycling">
+                    </datalist>
+                    <label for="weight">Product weight</label>
+                    <input type="number" id="weight" name="weight">
+                    <fieldset>
+                        <legend>Durability:</legend>
+                        <input type="radio" id="rocksolid" name="durability" value="rocksolid">
+                        <label for="rocksolid">Rocksolid</label>
+                        <input type="radio" id="solid" name="durability" value="solid">
+                        <label for="solid">Solid</label>
+                        <input type="radio" id="average" name="durability" value="average">
+                        <label for="average">Average durability</label>
+                        <input type="radio" id="belowavg" name="durability" value="belowavg">
+                        <label for="belowavg">Below average product wuality</label>
+                        <input type="radio" id="notdurable" name="durability" value="notdurable">
+                        <label for="notdurable">Not durable</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Value for money:</legend>
+                        <input type="radio" id="worthit" name="value" value="worthit">
+                        <label for="worthit">Worth every penny</label>
+                        <input type="radio" id="average" name="value" value="average">
+                        <label for="average">Average value</label>
+                        <input type="radio" id="notworth" name="value" value="notworth">
+                        <label for="notworth">Not worth the price</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Review:</legend>
+                    <label for="rtitle">Title</label>
+                    <input type="text" id="rtitle" name="rtitle" value="Title">
+                    <label for="rbody">Your Review:</label>
+                    <input type="textarea" id="rbody" name="rbody" value="Your review goes here">
+                    <label for="pros">Pros:</label>
+                    <input type="text" id="pros" name="pros" value="Pros...">
+                    <label for="cons">Cons:</label>
+                    <input type="text" id="cons" name="cons" value="Cons...">
+                    <fieldset>
+                        <legend>Overall Rating:</legend>
+                        <input type="radio" id="five" name="rating" value="five">
+                        <label for="five">Five stars!</label>
+                        <input type="radio" id="four" name="rating" value="four">
+                        <label for="four">Four stars!</label>
+                        <input type="radio" id="three" name="rating" value="three">
+                        <label for="three">Three stars</label>
+                        <input type="radio" id="two" name="rating" value="two">
+                        <label for="two">Five stars!</label>
+                        <input type="radio" id="one" name="rating" value="one">
+                        <label for="one">Five stars!</label>
+                    </fieldset>
+                </fieldset>   
+            </form>
+            
+    </main>
+    <footer>
+        <hr/>
+        <table>
+            <tr>
+                <th>Top Reviews</th>
+                <th>Top Categories</th>
+                <th>Members</th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><a href =#>Bearded coffee addict goes camping?</a></li>
+                        <li><a href =#>I can now get my caffein fix anywhere I go!</a></li>
+                        <li><a href =#>I bring this thing to my construction site...</a></li>
+                        <li><a href =#>Wacaco nanopresso, my new backpacking essential.</a></li>
+                        <p><a href=#>...more reviews...</a></p>                                           <!--link to products review page-->
+                    </ol>
+                </td>
+                <!-- <td>
+                    <ol>
+                        <li><a>Wacaco nanopresso</a></li>
+                        <li><a>Msr Hubba Bubba</a></li>
+                        <p><a href="store/storehome.html">...Store Home...</a></p>
+                    </ol>
+                </td> -->
+                <td>
+                    <ol>
+                        <li><a href=#>Ultralight gear</a></li>
+                        <li><a href=#>Kitchen Gear</a></li>
+                        <li><a href=#>Shelters</a></li>    
+                        <p><a href=#>...All categories...</a></p>
+                    </ol>
+                </td>
+                <td>
+             
+                    <a href=#>Members</a>
+                    <br/>
+                    <br/>
+                    <a href=#>Create Account</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    
+</body>
+</html>
